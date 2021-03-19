@@ -10,26 +10,27 @@
     <div>
 
         <!-- Header -->
-        <div>
-            <button>Consumer Goods</button>
-            <button>Territory</button>
-            <button>Maps</button>
+        <div class="header">
+            <button onclick="divConsumerGoods()">Consumer Goods</button>
+            <button onclick="divTerritory()">Territory</button>
+            <button onclick="divMaps()">Maps</button>
         </div>
 
         <!-- Main -->
-        <div>
+        <div class="main">
             <!-- Consumer Goods -->
-            <div></div>
+            <div id="consumerGoods"><p>divConsumerGoods</p></div>
             <!-- Territory -->
-            <div></div>
+            <div id="territory"><p>divTerritory</p></div>
             <!-- Maps -->
-            <div></div>
+            <div id="maps"><p>divMaps</p></div>
         </div>
-        
-        <!-- Footer -->
-        <div>
 
+        <!-- Footer -->
+        <div class="footer">
+            <button onclick="closeAllDivs()">TORNA SU</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
