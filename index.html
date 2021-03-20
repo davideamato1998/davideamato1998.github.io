@@ -5,21 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <div>
-
         <!-- Header -->
         <div class="header">
-            <button onclick="divConsumerGoods()">Consumer Goods</button>
-            <button onclick="divTerritory()">Territory</button>
-            <button onclick="divMaps()">Maps</button>
+            <a onclick="divConsumerGoods()" class="cssConsumerGoods"><h1>Consumer Goods</h1></a>
+            <a onclick="divTerritory()" class="cssTerritory"><h1>Territory</h1></a>
+            <a onclick="divMaps()" class="cssMaps"><h1>Maps</h1></a>
         </div>
 
         <!-- Main -->
         <div class="main">
             <!-- Consumer Goods -->
-            <div id="consumerGoods"><p>divConsumerGoods</p></div>
+            <div id="consumerGoods">
+                <!-- Standard Objects Consumer Goods List -->
+                <div id="objectsList">
+                    <ul> 
+                        <li> 
+                            <h3>AssessmentIndicatorDefinition:</h3>
+                            Per definire i parametri che fungono da indicatori di conformità per le attività di vendita 
+                            al dettaglio per confrontare i valori target e effettivi;
+                        </li>
+                        <li>
+                            <h3>AssessmentTask:</h3>
+                            Per eseguire attività come il controllo del planogramma, dell’inventario, della promozione, 
+                            per il sondaggio in negozio o attività personalizzate nei negozi atte ad acquisire informazioni;
+                        </li>
+                        <li>
+                            <h3>AssessmentTaskContentDocument:</h3>
+                            Associa i documenti di contenuto a visite, attività, promozioni o planogrammi;
+                        </li>
+                        <li>
+                            <h3>AssessmentTaskDefinition:</h3>
+                            Associa un’attività di valutazione a una definizione di indicatore di valutazione;
+                        </li>
+                        <li>
+                            <h3>AssessmentTaskIndDefinition:</h3>
+                            Associa una definizione di indicatore di valutazione a una definizione di attività di valutazione;
+                        </li>
+                        <li>
+                            <h3>AssessmentTaskOrder:</h3>
+                            Definire un’attività di ordine che il rappresentante di vendita può durante una visita ai negozi;
+                        </li>
+                        <li>
+                            <h3>Assortment:</h3>
+                            Per aggiungere ad un elenco i prodotti idonei per la vendita in un negozio;
+                        </li>
+                        <li>
+                            <h3>AssortmentProduct:</h3>
+                            Per associare i prodotti ad un assortimento;
+                        </li>
+                        <li>
+                            <h3>DeliveryTask:</h3>
+                            Rappresenta le informazioni sulle spedizioni e sugli ordini da consegnare a un negozio durante una visita;
+                        </li>
+                        <li>
+                            <h3>InStoreLocation:</h3>
+                            Crea posizioni all’interno del layout di un negozio al dettaglio come corridoi, scaffali o retrobotteghe;
+                        </li>
+                        <li>
+                            <h3>OtherComponentTask:</h3>
+                            Rappresenta i dettagli di un’attività del componente eseguita in una visita. 
+                            Un’attività componente consente ai clienti di avviare componenti dalla struttura delle attività;
+                        </li>
+                        <li>
+                            <h3>Promotion:</h3>
+                            Crea attività promozionali che fanno parte di una campagna o promozioni mirate isolate da eseguire nei negozi al dettaglio;
+                        </li>
+                        <li>
+                            <h3>PromotionChannel:</h3>
+                            Associa una promozione a un negozio, un gruppo di negozi o un account;
+                        </li>
+                        <li>
+                            <h3>PromotionProduct:</h3>
+                            Associa una promozione a un prodotto;
+                        </li>
+                        <li>
+                            <h3>PromotionProductCategory:</h3>
+                            Associa un’attività promozionale a una categoria di prodotto;
+                        </li>
+                        <li>
+                            <h3>RetailLocationGroup:</h3>
+                            Raggruppa i negozi al dettaglio basandosi su caratteristiche condivise, 
+                            come dimensioni, posizione, parte di una catena di vendita al dettaglio;
+                        </li>
+                        <li>
+                            <h3>RetailStore:</h3>
+                            Per creare record per i negozi al dettaglio fisici associati agli account aziendali;
+                        </li>
+                        <li>
+                            <h3>RetailStoreKpi:</h3>
+                            Associa i gruppi di negozi alla definizione degli indicatori di valutazione, ai prodotti e alle categorie di ubicazione in negozio 
+                            e definisce gli obiettivi. Gli obiettivi sono i valori di conformità attesi per ciascuna definizione di indicatore di valutazione, 
+                            che è un parametro in base al quale vengono decisi i marcatori di conformità per un’attività;
+                        </li>
+                        <li>
+                            <h3>RetailVisitKpi:</h3>
+                            Acquisisce le informazioni effettive durante una visita rispetto alla definizione dell’indicatore di valutazione definito 
+                            e ai valori target;
+                        </li>
+                        <li>
+                            <h3>StoreActionPlanTemplate:</h3>
+                            Associa un modello di piano d’azione a un negozio;
+                        </li>
+                        <li>
+                            <h3>StoreAssortment:</h3>
+                            Associa un assortimento a un negozio, un gruppo di negozi o un account;
+                        </li>
+                        <li>
+                            <h3>StoreProduct:</h3>
+                            Associa un prodotto a un negozio al dettaglio o ad una posizione specifica in negozio;
+                        </li>
+                        <li>
+                            <h3>VehicleUserAssignment:</h3>
+                            Rappresenta l’assegnazione di un veicolo ad un conducente. Il veicolo è un luogo in movimento;
+                        </li>
+                        <li>
+                            <h3>Visit:</h3>
+                            Tiene traccia delle informazioni relative alla visita di un rappresentante sul campo in un negozio al dettaglio
+                            dove si svolgono attività di vendita al dettaglio;
+                        </li>
+                        <li>
+                            <h3>Visitor:</h3>
+                            Rappresenta gli agenti di vendita che effettuano le visite;
+                        </li>
+                        <li>
+                            <h3>VisitedParty:</h3>
+                            Rappresenta la persona di contatto presso l’account che viene visitato.
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <!-- Territory -->
             <div id="territory"><p>divTerritory</p></div>
             <!-- Maps -->
@@ -28,7 +147,7 @@
 
         <!-- Footer -->
         <div class="footer">
-            <button onclick="closeAllDivs()">TORNA SU</button>
+            <button onclick="closeAllDivs()" class="cssButtonFooter"><h3>TORNA SU</h3></button>
         </div>
     </div>
     <script src="script.js"></script>

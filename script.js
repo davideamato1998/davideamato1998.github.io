@@ -9,7 +9,7 @@ const closeAllDivs = () => {
 };
 
 window.onload = () => {
-  console.log("onload");
+  //console.log("onload");
   closeAllDivs();
 };
 
