@@ -5,24 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/overlay.css">
 </head>
 <body>
     <div>
         <!-- Header -->
         <div class="header">
-            <a onclick="divConsumerGoods()" class="cssConsumerGoods"><h1>Consumer Goods</h1></a>
-            <a onclick="divTerritory()" class="cssTerritory"><h1>Territory</h1></a>
-            <a onclick="divMaps()" class="cssMaps"><h1>Maps</h1></a>
+            <a href="javascript:void(0)" onclick="openNav()" class="cssConsumerGoods"><h1>Consumer Goods</h1></a>
+            <a href="javascript:void(0)" onclick="divTerritory()" class="cssTerritory"><h1>Territory Management</h1></a>
+            <a href="javascript:void(0)" onclick="divMaps()" class="cssMaps"><h1>Salesforce Maps</h1></a>
+            <a href="javascript:void(0)" onclick="divMaps()" class="cssMaps"><h1>Salesforce Surveys</h1></a>
+            <a href="javascript:void(0)" onclick="divMaps()" class="cssMaps"><h1>Materiale Utile</h1></a>
         </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="javascript:void(0)" onclick="divConsumerGoods()">Retails Execution</a>
+              <a href="javascript:void(0)">Data Model</a>
+              <a href="javascript:void(0)" onclick="divConsumerGoodsStandardObjects()">Standard Objects</a>
+              <a href="javascript:void(0)" onclick="divConsumerGoodsStandardComponents()">Standard Components</a>
+            </div>
+          </div>
 
         <!-- Main -->
         <div class="main">
             <!-- Consumer Goods -->
             <div id="consumerGoods">
+
                 <!-- Standard Objects Consumer Goods List -->
-                <div id="objectsList">
+                <div id="consumerGoodsStandardObject">
                     <ul> 
                         <li> 
                             <h3>AssessmentIndicatorDefinition:</h3>
@@ -138,7 +152,68 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Retails Execution -->
+                <div id="consumerGoodsRetailsExecution">
+
+                </div>
+
+                <!-- Standard Components Consumer Goods List -->
+                <div id="consumerGoodsStandardComponents">
+                    <ul>
+                        <li>
+                            <h3>Visit Details</h3> collegato all'oggetto <h3>Visit</h3>
+                        </li>
+                        <li>
+                            <h3>Visit Overview</h3> collegato all'oggetto <h3>Visit</h3>
+                        </li>
+                        <li>
+                            <h3>Visit Actions</h3> collegato all'oggetto <h3>Visit</h3>
+                        </li>
+                        <li>
+                            <h3>Promotion Details</h3> collegato all'oggetto <h3>Promotion</h3>
+                        </li>
+                        <li>
+                            <h3>Promotion Detail Header</h3> collegato all'oggetto <h3>Promotion</h3>
+                        </li>
+                        <li>
+                            <h3>Cart Review</h3> collegato all'oggetto <h3>Order</h3>
+                        </li>
+                        <li>
+                            <h3>Order Details</h3> collegato all'oggetto <h3>Order</h3>
+                        </li>
+                        <li>
+                            <h3>Inventory Check</h3> collegato all'oggetto <h3>Assessment Task</h3>
+                        </li>
+                        <li>
+                            <h3>Promotion List</h3> collegato all'oggetto <h3>Assessment Task</h3>
+                        </li>
+                        <li>
+                            <h3>In-Store Products</h3> collegato all'oggetto <h3>Assessment Task</h3>
+                        </li>
+                        <li>
+                            <h3>Planogram List</h3> collegato all'oggetto <h3>Assessment Task</h3>
+                        </li>
+                        <li>
+                            <h3>Consumer Goods Survey List</h3> collegato all'oggetto <h3>Assessment Task</h3>
+                        </li>
+                        <li>
+                            <h3>Custom Object Task List</h3> collegato all'oggetto <h3>Assessment Task</h3>
+                        </li>
+                        <li>
+                            <h3>Consumer Goods Custom Task Measures</h3> collegato all'oggetto <h3>Any</h3>
+                        </li>
+                        <li>
+                            <h3>Shipment Details</h3> collegato all'oggetto <h3>Shipment</h3>
+                        </li>
+                        <li>
+                            <h3>Shipment List</h3> collegato all'oggetto <h3>Delivery Task</h3>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
+
             <!-- Territory -->
             <div id="territory"><p>divTerritory</p></div>
             <!-- Maps -->
@@ -150,6 +225,7 @@
             <button onclick="closeAllDivs()" class="cssButtonFooter"><h3>TORNA SU</h3></button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="Scripts/script.js"></script>
+
 </body>
 </html>
