@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/overlay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div>
         <!-- Header -->
-        <div class="header">
-            <a href="javascript:void(0)" onclick="openNav()" class="cssConsumerGoods"><h1>Consumer Goods</h1></a>
-            <a href="javascript:void(0)" onclick="divTerritory()" class="cssTerritory"><h1>Territory Management</h1></a>
-            <a href="javascript:void(0)" onclick="divMaps()" class="cssMaps"><h1>Salesforce Maps</h1></a>
-            <a href="javascript:void(0)" onclick="divMaps()" class="cssMaps"><h1>Salesforce Surveys</h1></a>
-            <a href="javascript:void(0)" onclick="divMaps()" class="cssMaps"><h1>Materiale Utile</h1></a>
+    
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0)" onclick="openNav()"><h3>Consumer Goods</h3></a>
+            <a href="javascript:void(0)" onclick="divTerritory()"><h3>Territory Management</h3></a>
+            <a href="javascript:void(0)" onclick="divMaps()"><h3>Salesforce Maps</h3></a>
+            <a href="javascript:void(0)" onclick="divMaps()"><h3>Salesforce Surveys</h3></a>
+            <a href="javascript:void(0)" onclick="divMaps()"><h3>Materiale Utile</h3></a>
+            <a style="color: white;" href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
         <div id="myNav" class="overlay">
@@ -153,11 +158,6 @@
                     </ul>
                 </div>
 
-                <!-- Retails Execution -->
-                <div id="consumerGoodsRetailsExecution">
-
-                </div>
-
                 <!-- Standard Components Consumer Goods List -->
                 <div id="consumerGoodsStandardComponents">
                     <ul>
@@ -210,6 +210,11 @@
                             <h3>Shipment List</h3> collegato all'oggetto <h3>Delivery Task</h3>
                         </li>
                     </ul>
+                </div>
+
+                <!-- Retails Execution -->
+                <div id="consumerGoodsRetailsExecution">
+
                 </div>
 
             </div>
